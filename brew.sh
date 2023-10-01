@@ -11,5 +11,8 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+# Setup zsh
+brew install zsh zsh-autosuggestions zsh-syntax-highlighting
+
 # Remove outdated versions from the cellar.
 brew cleanup

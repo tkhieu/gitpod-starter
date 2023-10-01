@@ -14,13 +14,15 @@ tasks:
     before: |
         cd ../gp-df
     init: |
-        echo npm install
+        ./brew.sh
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     command: |
-        echo npm run dev
+        echo "Finish setup dotfiles"
+
   - init: |
       echo "Hello Gitpod"
-      brew install zsh zsh-autosuggestions zsh-syntax-highlighting
-      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      
+      
       
 
 ports:
