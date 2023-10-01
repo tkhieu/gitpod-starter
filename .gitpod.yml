@@ -3,12 +3,24 @@
 
 image: gitpod/workspace-full
 
+additionalRepositories:
+  - url: https://github.com/tkhieu/gitpod-starter
+    checkoutLocation: gp-df
+
 tasks:
+  - name: setup dotfiles
+    # change working directory as per configured in `checkoutLocation`
+    # which is configured above as `/workspaces/backend`
+    before: |
+        cd ../gp-df
+    init: |
+        echo npm install
+    command: |
+        echo npm run dev
   - init: |
       echo "Hello Gitpod"
       brew install zsh zsh-autosuggestions zsh-syntax-highlighting
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      chsh -s $(which zsh)
       
 
 ports:
