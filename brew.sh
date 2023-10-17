@@ -11,6 +11,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+# Setup AWS & Tools
+brew install awscli aws/tap/copilot-cli
+
 # Setup zsh
 brew install zsh zsh-autosuggestions zsh-syntax-highlighting
 
