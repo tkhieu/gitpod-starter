@@ -11,6 +11,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+# Brew install Tools
+brew install rsync
+
 # Setup AWS & Tools
 brew install awscli aws/tap/copilot-cli
 
