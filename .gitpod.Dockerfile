@@ -25,9 +25,9 @@ antigen bundle djui/alias-tips
 
 # Load the theme.
 # my personal theme
-antigen theme dzenzes/danielzenzes.zsh-theme --branch=main
+# antigen theme dzenzes/danielzenzes.zsh-theme --branch=main
 # something more popular:
-# antigen theme robbyrussell
+antigen theme robbyrussell
 
 # more configuration
 
