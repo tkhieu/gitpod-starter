@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full:latest
 
-RUN brew install zsh antigen
+RUN brew install zsh antigen opentofu
 
 RUN <<EOR
 cat <<- ZSHRC > /home/gitpod/.zshrc
