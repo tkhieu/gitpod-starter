@@ -18,15 +18,13 @@ antigen bundle git
 antigen bundle node
 antigen bundle npm
 antigen bundle aws
+antigen bundle pip
 antigen bundle terraform
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen bundle djui/alias-tips
 
-# Load the theme.
-# my personal theme
-# antigen theme dzenzes/danielzenzes.zsh-theme --branch=main
-# something more popular:
+# Load the theme, something more popular:
 antigen theme robbyrussell
 
 # more configuration
