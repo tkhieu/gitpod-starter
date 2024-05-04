@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full:latest
 
-RUN brew install zsh antigen
+RUN brew install zsh antigen git-extras
 
 RUN <<EOR
 cat <<- ZSHRC > /home/gitpod/.zshrc
@@ -20,6 +20,7 @@ antigen bundle npm
 antigen bundle aws
 antigen bundle pip
 antigen bundle terraform
+antigen bundle git-extras
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen bundle djui/alias-tips
